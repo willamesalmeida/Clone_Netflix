@@ -1,0 +1,152 @@
+:root{
+  --vermelho:#E50914;
+  --preto:#141414;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*elemento base*/
+
+body{
+  background: var(--preto);
+  font-family: 'Arial', Times, serif;
+  color: white;
+}
+
+
+header .container{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-between;
+} 
+
+header .logo{
+  color: var(--vermelho);
+  font-family: "Bebas Neue","Arial Black", Times, serif;
+  font-size: 40px;
+  
+}
+
+header nav a{
+  text-decoration: none;
+  color:#AAA;
+  margin-right: 10px;
+}
+
+header nav a:hover{
+  color:#fff;
+} 
+
+/*filme principal*/
+
+.filme-principal{
+  font-size: 16px;
+  background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url("../img/capa-house-of-cards.jpg");
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  /*cover deixa a imagem do tamanho da caixa ajustando o tamanho da imagem e
+  não cortando uma parte da imagem do tamanho da caixa.*/
+  
+  /*o linear gradiente esta criando um gradiente dentro na imagem causando esse tom escuro por cima para criar um contraste entre 
+  a sinopse e a imagem.*/
+}
+
+.filme-principal .descricao{
+  margin-top: 10px;
+  margin-bottom: 90px;
+}
+
+.filme-principal .titulo{
+  margin-top: 15%;
+  font-size: 40px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.filme-principal .botao{
+  text-align: center;
+  background-color: rgba(0,0,0,.50);
+  border: none;
+  color: white;
+
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+  outline: none;
+  cursor: pointer;
+/*
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  outline: none;
+*/
+}
+.botao:hover{
+  background-color: white;
+  color: black;
+  transition: 0.5s ease all;
+}
+
+.botao i{
+  margin-right: 5px;
+}
+
+.container{
+  margin-left: 20px ;
+}
+
+.filme-principal .container{
+  width: 70%;
+
+}
+
+.box-filme{
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.carrosel-filmes{
+  margin-top: 5px;
+}
+
+
+/* .botao span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.botao span:after{
+
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.botao:hover span {
+  padding-right: 25px;
+}
+
+.botao:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.botao:active{
+  background-color: var(--vermelho);
+  box-shadow: 0 5px #666666;
+} */
